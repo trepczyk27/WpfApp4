@@ -1,0 +1,78 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <ProgressBar Margin="450,366,0,0" Name="PBar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="337" Height="40" Value="60" RenderTransformOrigin="1.859,1.924" >
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform AngleY="-0.301"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-2.235"/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+
+        <ListBox Margin="10,10,0,0" Name="listBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="406" Height="391">
+
+            <ListBoxItem Background="LightCoral" Foreground="Red" FontFamily="Verdana" FontSize="12" FontWeight="Bold">
+                <CheckBox Name="CoffieCheckBox" Checked="CoffieCheckBox_Checked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Administrator\Desktop\coffie.jpg" Height="60"></Image>
+                        <TextBlock Text="Coffie"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="LightGray" Foreground="Black" FontFamily="Georgia" FontSize="14" FontWeight="Bold">
+                <CheckBox Name="TeaCheckBox" Checked="TeaCheckBox_Checked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Administrator\Desktop\tea.jpg" Height="60"></Image>
+                        <TextBlock Text="Tea"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="LightBlue" Foreground="Purple" FontFamily="Verdana" FontSize="12" FontWeight="Bold">
+                <CheckBox Name="liliaBox" Checked="liliaBox_Checked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Administrator\Desktop\lilia.jpg" Height="60"></Image>
+                        <TextBlock Text="Lilia"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="LightGreen" Foreground="Green" FontFamily="Georgia" FontSize="14" FontWeight="Bold">
+                <CheckBox Name="KonserwaPapiezBox" Checked="KonserwaPapiezBox_Checked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Administrator\Desktop\papiez.jpg" Height="60"></Image>
+                        <TextBlock Text="konserwa"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="LightBlue" Foreground="Blue" FontFamily="Verdana" FontSize="12" FontWeight="Bold">
+                <CheckBox Name="asterBox" Checked="asterBox_Checked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Administrator\Desktop\aster.jpg" Height="60"></Image>
+                        <TextBlock Text="Aster"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="LightSlateGray" Foreground="Orange" FontFamily="Georgia" FontSize="14" FontWeight="Bold">
+                <CheckBox Name="MangoShakeCheckBox" Checked="MangoShakeCheckBox_Checked">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C:\Users\Administrator\Desktop\MangoShake.jpg" Height="60"></Image>
+                        <TextBlock>Shake</TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+
+        </ListBox>
+
+        <Rectangle  Stroke="Black" StrokeThickness="4" Margin="457,217,93,99" />
+
+    </Grid>
+</Window>
